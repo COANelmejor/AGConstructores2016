@@ -5,8 +5,10 @@
 		"area": "m²",
 		"arquitectura": "",
 		"construccion": "",
-		"fotografia": "",
 		"jardinizacion": "",
+		
+		"fotografia": "",
+		
 		"ingenieria": "",
 		"montaje": "",
 		"imagesFolder": "",

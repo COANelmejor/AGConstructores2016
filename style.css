@@ -1,5 +1,5 @@
 /*Colores:Texto:#0D0D0D;Fondo:#F1F1F1;Enfasis:#D61E15;Links:#8E8E8E;Links2:#BE5A60;*/
-#linkButtons{margin-right: 16px;}
+.linkButtons{margin-right: 16px;}
 a .btn {color:#F1F1F1;}
 a:hover .btn { color:#0D0D0D;}
 .btn:hover{background-color: rgba(255,255,255,0.8); }
