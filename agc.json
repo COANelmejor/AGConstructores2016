@@ -1,4 +1,4 @@
-var agc = [
+[
 	{
 		"name": "Café Sunzal",
 		"ubicacion": "Km 42 de la carretera del Litoral, La Libertad, El Salvador.",
@@ -42,6 +42,25 @@ var agc = [
 			"7.jpg"
 		],
 		"descripcion": "La casa de botes se ubica a la orilla del lago de Ilopango, su localización al borde de la playa facilita a los atletas la colocación del equipo hacia el agua. Como parte de la creatividad empleada en este proyecto se utilizó la estructura de rompe olas como graderío para el público."
+	},{
+		"name": "Casa Imberton",
+		"ubicacion": "Bosques de Santa Elena, Antiguo Cuscatlán San Salvador, El Salvador",
+		"area": "470.00 m²",
+		"arquitectura": "Arq. Rolando Deneke Sol<br />Arq. Alejandro González Zeceña<br/>Arq. Ricardo González Zeceña",
+		"construccion": "Grupo AG Constructores S.A.",
+		"fotografia": "Alejandro González",
+		"jardinizacion": "",
+		"ingenieria": "",
+		"montaje": "",
+		"imagesFolder": "06",
+		"imagesFiles": [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg",
+			"5.jpg"
+		],
+		"descripcion": "Su arquitectura moderna de tipo minimalista refleja el espíritu artístico de su propietario, buscando la belleza en la simplicidad y forma pura de los elementos y materiales utilizados para su  construcción."
 	},
 	{
 		"name": "Bosque Nebulo",
@@ -63,25 +82,6 @@ var agc = [
 			"6.jpg"
 		],
 		"descripcion": "Este proyecto se  ubicá en el bosque  Nebuloso  del volcán de Santa Ana, su diseño intenta incorporarse a las curvas de nivel del terreno para poder tener el menor impacto visual posible con el entorno."
-	},{
-		"name": "Casa Imberton",
-		"ubicacion": "Bosques de Santa Elena, Antiguo Cuscatlán San Salvador, El Salvador",
-		"area": "470.00 m²",
-		"arquitectura": "Arq. Rolando Deneke Sol<br />Arq. Alejandro González Zeceña<br/>Arq. Ricardo González Zeceña",
-		"construccion": "Grupo AG Constructores S.A.",
-		"fotografia": "Alejandro González",
-		"jardinizacion": "",
-		"ingenieria": "",
-		"montaje": "",
-		"imagesFolder": "06",
-		"imagesFiles": [
-			"5.jpg",
-			"2.jpg",
-			"3.jpg",
-			"4.jpg",
-			"1.jpg"
-		],
-		"descripcion": "Su arquitectura moderna de tipo minimalista refleja el espíritu artístico de su propietario, buscando la belleza en la simplicidad y forma pura de los elementos y materiales utilizados para su  construcción."
 	},
 	{
 		"name": "Casa Club La Montaña",
@@ -95,14 +95,14 @@ var agc = [
 		"montaje": "",
 		"imagesFolder": "04",
 		"imagesFiles": [
-			"8.jpg",
+			"1.jpg",
 			"2.jpg",
 			"3.jpg",
 			"4.jpg",
 			"5.jpg",
 			"6.jpg",
 			"7.jpg",
-			"1.jpg"
+			"8.jpg"
 		],
 		"descripcion": "La casa club se ubica en el corazón de las parcelas  de carácter recreativo en las faldas del volcán de Santa Ana, en las cuales el usuario disfruta de la vegetación y clima del bosque nebuloso.<br/ >Su arquitectura manifiesta un carácter moderno mezclado con detalles propios de las casas patronales de las fincas de café de la zona. Su principal función es la de reunir ahí a los vecinos atraídos por el área de restaurante y tienda de conveniencia."
 	},
@@ -118,9 +118,9 @@ var agc = [
 		"montaje": "",
 		"imagesFolder": "07",
 		"imagesFiles": [
-			"3.jpg",
+			"1.jpg",
 			"2.jpg",
-			"1.jpg"
+			"3.jpg"
 		],
 		"descripcion": "La planta arquitectónica se desarrolla en varias terrazas debido a las características propias del terreno. Se buscó que la diferencia de niveles entre las distintas áreas de la vivienda, no causaran impacto, tanto visual como físico al recorrerlas, pero si aprovechar para generar distintas alturas en los volúmenes de sus fachadas dándole un aspecto muy dinámico al conjunto."
 	},
@@ -240,7 +240,7 @@ var agc = [
 		"montaje": "",
 		"imagesFolder": "10",
 		"imagesFiles": [
-			"IMG_5237.jpg",
+			"IMG_1703.JPG",
 			"IMG_1704.JPG",
 			"IMG_1705.JPG",
 			"IMG_1706.JPG",
@@ -250,7 +250,7 @@ var agc = [
 			"IMG_1710.JPG",
 			"IMG_1711.JPG",
 			"IMG_4789.JPG",
-			"IMG_1703.JPG"
+			"IMG_5237.jpg"
 		],
 		"descripcion": "Estructura monolítica de concreto armado."
 	},
@@ -383,112 +383,3 @@ var agc = [
 		"descripcion": ""
 	}
 ]
-
-var pnamef = function(i){
-		return agc[i].name;
-}
-var pname = function(i){
-	return "<h2 class='text-center'>"+agc[i].name+"</h2>";
-};
-var pubicacion = function(i){
-	if (agc[i].ubicacion != "") {
-		return "<p><b class='text-center'>Ubicación:</b> "+agc[i].ubicacion+"</p>";
-	}else{
-		return "";
-	}
-};
-var parea = function(i){
-	if (agc[i].area != "m²") {
-		return "<p><b>Área: </b>"+agc[i].area+"</p>";
-	}else{
-		return "";
-	}
-};
-var parquitectura = function(i){
-	if (agc[i].arquitectura != "") {
-		return "<p><b>Arquitectura: </b>"+agc[i].arquitectura+"</p>";
-	}else{
-		return "";
-	}
-};
-var pconstruccion = function (i) {
-	if (agc[i].construccion != "") {
-		return "<p><b>Construcción: </b>"+agc[i].construccion+"</p>";
-	}else{
-		return "";
-	}	
-};
-var pjardinizacion = function (i) {
-	if (agc[i].jardinizacion != "") {
-		return "<p><b>Jardinización: </b>"+agc[i].jardinizacion+"</p>";
-	}else{
-		return "";
-	}
-};
-var pfotografia = function (i) {
-	if (agc[i].fotografia != "") {
-		return "<p><b>Fotografía: </b>"+agc[i].fotografia+"</p>";
-	}else{
-		return "";
-	}
-};
-var pimagef = function(i){
-	var images = ""
- 	images += "<div class='container'>"
- for (var j = 0; j < agc[i].imagesFiles.length; j+=3) {
- 	images += "<div class='row'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j]+"' class='img-responsive col-xs-12 col-md-4 well'>";
- 	if (agc[i].imagesFiles[j+1] != undefined){
- 		images += "<img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+1]+"' class='img-responsive col-xs-12 col-md-4 well'>";
- 	}
- 	if (agc[i].imagesFiles[j+2] != undefined){
- 		images += "<img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+2]+"' class='img-responsive col-xs-12 col-md-4 well'>";
- 	}
- }
-	images += '</div></div><br><a href="proyectos.html" class="btn btn-danger"><-- regresar a "Proyectos"</a>'
- return images;
-};
-
-var pimage = function(i){
-	return '<a href="'+agc[i].imagesFolder+'.html" id="l'+i+'"><img src="img/'+agc[i].imagesFolder+'/'+agc[i].imagesFiles[0]+'" class="img-responsive"></a>'
-};
-
-var pingenieria = function(i){
-	if (agc[i].ingenieria != "") {
-		return "<p><b>Ingenieria: </b>"+agc[i].ingenieria+"</p>";
-	}else{
-		return "";
-	}
-};
-var pmontaje = function(i){
-	if (agc[i].montaje != "") {
-		return "<p><b>Montaje: </b>"+agc[i].montaje+"</p>";
-	}else{
-		return "";
-	}
-};
-var pdescripcion = function(i){
-	if (agc[i].descripcion != "") {
-		return "<p class='text-justify'><b>Descripción: </b>"+agc[i].descripcion.substr(0,75)+"...<a href='"+agc[i].imagesFolder+".html'>Ver Más</a></p>";
-	}else{
-		return "";
-	}
-};
-var pdescripcionf = function(i){
-	if (agc[i].descripcion != "") {
-		return "<p class='text-justify'><b>Descripción: </b>"+agc[i].descripcion;
-	}else{
-		return "";
-	}
-};
-
-	
-   
-
-    
-
-for (var i= 0; i <= agc.length; i+=3) {
-$("#projects").append('<div class="row" id="projects'+i+'"></div>')
-$("#projects"+i).append('<div class="col-xs-12 col-md-4 well">'+pname(i)+pimage(i)+'<br>'+pubicacion(i)+parea(i)+parquitectura(i)+pconstruccion(i)+pingenieria(i)+pjardinizacion(i)+pmontaje(i)+pfotografia(i)+pdescripcion(i)+'</div>');
-$("#projects"+i).append('<div class="col-xs-12 col-md-4 well">'+pname(i+1)+pimage(i+1)+'<br>'+pubicacion(i+1)+parea(i+1)+parquitectura(i+1)+pconstruccion(i+1)+pingenieria(i+1)+pjardinizacion(i+1)+pmontaje(i+1)+pfotografia(i+1)+pdescripcion(i+1)+'</div>');
-$("#projects"+i).append('<div class="col-xs-12 col-md-4 well">'+pname(i+2)+pimage(i+2)+'<br>'+pubicacion(i+2)+parea(i+2)+parquitectura(i+2)+pconstruccion(i+2)+pingenieria(i+2)+pjardinizacion(i+2)+pmontaje(i+2)+pfotografia(i+2)+pdescripcion(i+2)+'</div>');
-}
