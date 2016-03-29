@@ -13,11 +13,11 @@ var agc = [
 		"imagesFiles": [
 			"1.jpg",
 			"2.jpg",
-			"3.jpg",
 			"4.jpg",
-			"5.jpg",
 			"6.jpg",
-			"7.jpg"
+			"3.jpg",
+			"7.jpg",
+			"5.jpg"
 		],
 		"descripcion": "El proyecto está ubicado en un área turística sobre  la carretera Litoral de la costa sur de el Salvador, frente al Océano Pacifico.<br> La idea principal de su arquitectura es brindar a los usuarios un ambiente fresco,aprovechando la briza marina y las corrientes naturales de viento y a su vez impactar con la imponente vista hacia el mar."
 	},
@@ -34,9 +34,9 @@ var agc = [
 		"imagesFolder": "03",
 		"imagesFiles": [
 			"1.jpg",
-			"2.jpg",
 			"3.jpg",
 			"4.jpg",
+			"2.jpg",
 			"5.jpg",
 			"6.jpg",
 			"7.jpg"
@@ -101,8 +101,7 @@ var agc = [
 			"4.jpg",
 			"5.jpg",
 			"6.jpg",
-			"7.jpg",
-			"1.jpg"
+			"7.jpg"
 		],
 		"descripcion": "La casa club se ubica en el corazón de las parcelas  de carácter recreativo en las faldas del volcán de Santa Ana, en las cuales el usuario disfruta de la vegetación y clima del bosque nebuloso.<br/ >Su arquitectura manifiesta un carácter moderno mezclado con detalles propios de las casas patronales de las fincas de café de la zona. Su principal función es la de reunir ahí a los vecinos atraídos por el área de restaurante y tienda de conveniencia."
 	},
@@ -119,8 +118,8 @@ var agc = [
 		"imagesFolder": "07",
 		"imagesFiles": [
 			"3.jpg",
-			"2.jpg",
-			"1.jpg"
+			"1.jpg",
+			"2.jpg"
 		],
 		"descripcion": "La planta arquitectónica se desarrolla en varias terrazas debido a las características propias del terreno. Se buscó que la diferencia de niveles entre las distintas áreas de la vivienda, no causaran impacto, tanto visual como físico al recorrerlas, pero si aprovechar para generar distintas alturas en los volúmenes de sus fachadas dándole un aspecto muy dinámico al conjunto."
 	},
@@ -141,8 +140,8 @@ var agc = [
 			"IMG_1379.JPG",
 			"IMG_1380.JPG",
 			"IMG_3534.JPG",
-			"IMG_3823.JPG",
 			"IMG_3856.JPG",
+			"IMG_3823.JPG",
 			"IMG_3866.JPG",
 			"IMG_7791.jpg",
 			"IMG_7894.JPG",
@@ -167,7 +166,7 @@ var agc = [
 		"montaje": "",
 		"imagesFolder": "09",
 		"imagesFiles": [
-			"101-1101_IMG.png",
+			"101-1101_IMG.jpg",
 			"109-0914_IMG.JPG",
 			"111-1108_IMG.JPG",
 			"111-1136_IMG.JPG",
@@ -220,9 +219,9 @@ var agc = [
 		"montaje": "",
 		"imagesFolder": "05",
 		"imagesFiles": [
-			"1.jpg",
 			"2.jpg",
 			"3.jpg",
+			"1.jpg",
 			"4.jpg",
 			"5.jpg"
 		],
@@ -436,15 +435,15 @@ var pimagef = function(i){
 	var images = ""
  	images += "<div class='container'>"
  for (var j = 0; j < agc[i].imagesFiles.length; j+=3) {
- 	images += "<div class='row'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j]+"' class='img-responsive col-xs-12 col-md-4 well'>";
+ 	images += "<a href='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j]+"'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j]+"' class='img-responsive col-xs-12 col-md-4 well'></a>";
  	if (agc[i].imagesFiles[j+1] != undefined){
- 		images += "<img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+1]+"' class='img-responsive col-xs-12 col-md-4 well'>";
+ 		images += "<a href='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+1]+"'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+1]+"' class='img-responsive col-xs-12 col-md-4 well'></a>";
  	}
  	if (agc[i].imagesFiles[j+2] != undefined){
- 		images += "<img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+2]+"' class='img-responsive col-xs-12 col-md-4 well'>";
+ 		images += "<a href='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+2]+"'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+2]+"' class='img-responsive col-xs-12 col-md-4 well'></a>";
  	}
  }
-	images += '</div></div><br><a href="proyectos.html" class="btn btn-danger"><-- regresar a "Proyectos"</a>'
+	images += '</div><br><a href="proyectos.html" class="btn btn-danger"><-- regresar a "Proyectos"</a>'
  return images;
 };
 
@@ -480,11 +479,6 @@ var pdescripcionf = function(i){
 		return "";
 	}
 };
-
-	
-   
-
-    
 
 for (var i= 0; i <= agc.length; i+=3) {
 $("#projects").append('<div class="row" id="projects'+i+'"></div>')
