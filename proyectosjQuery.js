@@ -435,12 +435,12 @@ var pimagef = function(i){
 	var images = ""
  	images += "<div class='container'>"
  for (var j = 0; j < agc[i].imagesFiles.length; j+=3) {
- 	images += "<a href='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j]+"'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j]+"' class='img-responsive col-xs-12 col-md-4 well'></a>";
+ 	images += "<button class='btn col-xs-12 col-md-4 well' data-toggle='modal' data-target='.img-"+(j)+"'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j]+"' class='img-responsive'></button><div class='modal fade img-"+(j)+"' tabindex='-1' role='dialog' aria-labelledby='Modal'><div class='modal-dialog modal-lg'><div class='modal-content'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j]+"' class='img-responsive col-xs-12 col-md-12 well'></div></div></div>";
  	if (agc[i].imagesFiles[j+1] != undefined){
- 		images += "<a href='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+1]+"'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+1]+"' class='img-responsive col-xs-12 col-md-4 well'></a>";
+ 		images += "<button class='btn col-xs-12 col-md-4 well' data-toggle='modal' data-target='.img-"+(j+1)+"'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+1]+"' class='img-responsive'></button><div class='modal fade img-"+(j+1)+"' tabindex='-1' role='dialog' aria-labelledby='Modal'><div class='modal-dialog modal-lg'><div class='modal-content'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+1]+"' class='img-responsive col-xs-12 col-md-12 well'></div></div></div>";
  	}
  	if (agc[i].imagesFiles[j+2] != undefined){
- 		images += "<a href='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+2]+"'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+2]+"' class='img-responsive col-xs-12 col-md-4 well'></a>";
+ 		images += "<button class='btn col-xs-12 col-md-4 well' data-toggle='modal' data-target='.img-"+(j+2)+"'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+2]+"' class='img-responsive'></button><div class='modal fade img-"+(j+2)+"' tabindex='-1' role='dialog' aria-labelledby='Modal'><div class='modal-dialog modal-lg'><div class='modal-content'><img src='img/"+agc[i].imagesFolder+'/'+agc[i].imagesFiles[j+2]+"' class='img-responsive col-xs-12 col-md-12 well'></div></div></div>";
  	}
  }
 	images += '</div><br><a href="proyectos.html" class="btn btn-danger"><-- regresar a "Proyectos"</a>'
