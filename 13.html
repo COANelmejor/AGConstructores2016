@@ -26,14 +26,12 @@
   <nav class="navbar navbar-default navbar-static-top ">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-1 col-xs-6">
-        <a href="index.html"><button class="btn btn-block linkButton">Inicio</button></a>
+     <div class="col-md-1 col-xs-6 hidden-xs hidden-sm">
+        <a href="index.html"><img src="img/logo-icon.png" class="img-responsive"></a>
       </div>
-      <div class="col-md-1 col-xs-6">
-        <a href="proyectos.html"><button class="btn btn-block active linkButton">Proyectos</button></a>
-      </div>
-      <div class="col-md-1 col-xs-6">
-        <a href="why.html"><button class="btn btn-block linkButton">Por qué AG</button></a>
+      <div class="col-md-4 col-xs-0 hidden-xs hidden-sm"></div>
+      <div class="col-md-1 col-xs-6 ">
+        <a href="index.html"><button class="btn btn-block linkButton">Por qué AG</button></a>
       </div>
       <div class="col-md-1 col-xs-6">
         <a href="contacto.html"><button class="btn btn-block linkButton">Contacto</button></a>
@@ -79,7 +77,7 @@
   prnumcalc();
    
       $("h1").append("<b>"+pnamef(prnum)+"</b>")
-      $("#projectUnfold").append('<div class="row"><div class="col-xs-12 col-md-6">'+pimage(prnum)+'</div><div class="col-xs-12 col-md-6">'+pubicacion(prnum)+parea(prnum)+parquitectura(prnum)+pconstruccion(prnum)+pingenieria(prnum)+pjardinizacion(prnum)+pmontaje(prnum)+pfotografia(prnum)+pdescripcionf(prnum)+'</div></div>');
+      $("#projectUnfold").append('<div class="row"><div class="col-xs-12 col-md-6">'+pimagem(prnum)+'</div><div class="col-xs-12 col-md-6">'+pubicacion(prnum)+parea(prnum)+parquitectura(prnum)+pconstruccion(prnum)+pingenieria(prnum)+pjardinizacion(prnum)+pmontaje(prnum)+pfotografia(prnum)+pdescripcionf(prnum)+'</div></div>');
       
 
      $("#projectUnfold").append("<div class='row well'>"+pimagef(prnum)+"</div>");

@@ -387,7 +387,7 @@ var pnamef = function(i){
 		return agc[i].name;
 }
 var pname = function(i){
-	return "<h2 class='text-center'>"+agc[i].name+"</h2>";
+	return "<a href ='"+agc[i].imagesFolder+".html' class='proyecsA'><h2 class='text-center'>"+agc[i].name+"</h2></a>";
 };
 var pubicacion = function(i){
 	if (agc[i].ubicacion != "") {
@@ -449,6 +449,9 @@ var pimagef = function(i){
 
 var pimage = function(i){
 	return '<a href="'+agc[i].imagesFolder+'.html" id="l'+i+'"><img src="img/'+agc[i].imagesFolder+'/'+agc[i].imagesFiles[0]+'" class="img-responsive"></a>'
+};
+var pimagem = function(i){
+	return '<button class="btn well" data-toggle="modal" data-target=".img-0"><img src="img/'+agc[i].imagesFolder+'/'+agc[i].imagesFiles[0]+'" class="img-responsive"></button>'
 };
 
 var pingenieria = function(i){

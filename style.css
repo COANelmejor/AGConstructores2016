@@ -12,4 +12,11 @@ nav.navbar-static-top{background: rgba(255,37,25,1);background: -moz-linear-grad
 .active{background-color: rgba(240,240,240,0.3)!important;}
 .btn-danger{background-color: #D61F15}
 .btn-danger:hover{background-color: #d9534f;}
+#proyecsLink h2{color:#333333;}
+#proyecsLink:hover h2{color:#777777;}
+.proyecsA h2{color:#333333;}
+.proyecsA:hover h2{color:#777777;}
+h1 {font-size: 4em}
+
+
 
