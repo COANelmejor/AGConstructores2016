@@ -1,3 +1,6 @@
+<!--hacer un degradado en base a los colores del Logo-->
+<!--Hace imagenes de Contstruccion, Diseño y Planificación del index.html-->
+<!--Perspectiva Profesional de los Arquitectos... Ubicarlo...-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -51,47 +54,39 @@
     </div>
     </div>
 </nav>
-<div class="container">
-<a href="proyectos.html" class="btn btn-danger"><-- regresar a "Proyectos"</a>
-<h1 class="text-center" style="margin: 0.5em auto 1em auto"></h1>
 
-  <div class="row" id="projectUnfold">
-    
-    
-  </div>  
+<div class="container-fluid" style="max-width: 1200px; margin: 0px	auto 0px auto;">
+  <div class="row">
+    <h1 class=''>FILOSOFÍA</h1>
+    <div class="col-md-8 col-sm-6 col-xs-12">
+      <h3>Generar herrmientas especiales y lineamientos profesionales sólidos, para mejorar nuestro medio ambiente construido y así alcanzar un nivel más alto en la calidad de nuestras vidas.</h3>
+      
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <button type="button" class="well" data-toggle="modal" data-target=".bs-example-modal-lg">
+           <img src="/img/08/IMG_7791.jpg" class="img-responsive ">
+           
+         </button>
+ 
+         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+           <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+               <img src="/img/08/IMG_7791.jpg" class="img-responsive ">    
+               </div>
+            </div>
+         </div>
+  </div>
+
+  </div>
+</div>
 
 <h5 class="text-center">Todos los derechos reservados<br/>AG Constructores, ©2015</h5>
-<script type="text/javascript" id="scrptf"></script>
   </body>
-  <script>
-    var prfolder = "05";
-  </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="proyectosjQuery.js"></script>
-    <script type="text/javascript">
-     var prnum = 0;
-
-    var prnumcalc = function(){
-      for(var j = 0; j < agc.length; j++){
-          if (agc[j].imagesFolder == prfolder){
-            prnum = j;
-        }
-      }
-  };
-
-  prnumcalc();
-   
-      $("h1").append("<b>"+pnamef(prnum)+"</b>")
-      $("#projectUnfold").append('<div class="row well"><div class="col-xs-12 col-md-6">'+pimagem(prnum)+'</div><div class="col-xs-12 col-md-6">'+pubicacion(prnum)+parea(prnum)+parquitectura(prnum)+pconstruccion(prnum)+pingenieria(prnum)+pjardinizacion(prnum)+pmontaje(prnum)+pfotografia(prnum)+pdescripcionf(prnum)+'</div></div>');
-      
-
-     $("#projectUnfold").append("<div class='row well'>"+pimagef(prnum)+"</div>");
-
-    </script>
 
 </html>
