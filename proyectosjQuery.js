@@ -353,7 +353,22 @@ var agc = [
 		"imagesFolder": "19",
 		"imagesFiles": ["IMG_7609.jpg","IMG_7607.jpg","IMG_7608.jpg","IMG_7612.jpg","IMG_7616.JPG","IMG_7617.JPG","IMG_7618.jpg"],
 		"descripcion": ""
-	}/*, // Estos Poryectos se eliminaron de la página por falta de información. 
+	},
+	{
+		"name": "Residencial Las Olas",
+		"ubicacion": "Residencial Las Olas, Escuintla, Guatemala",
+		"area": "310 m²",
+		"arquitectura": "Arq. Arq. Alejandro González",
+		"construccion": "Grupo AG Constructores S.A.",
+		"fotografia": "Arq. Alejandro González",
+		"jardinizacion": "Residencial Las Olas",
+		"ingenieria": "",
+		"montaje": "",
+		"imagesFolder": "20",
+		"imagesFiles": ["13413041_658389390983822_882429542360553946_n.jpg","13419265_658389317650496_8930559801089553946_n.jpg","13427907_658389270983834_4504796568957101286_n.jpg","13432318_658389097650518_1877722580206230555_n.jpg","13434878_658389370983824_5799783548344065628_n.jpg","13434921_658389500983811_445900477826786280_n.jpg","13442253_658389107650517_4325396247499328939_n.jpg","13498088_658389464317148_5639107514872754775_o.jpg"]
+		"descripcion": ""
+	}
+	/*, // Estos Poryectos se eliminaron de la página por falta de información. 
 	{
 		"name": "INAP",
 		"ubicacion": "",

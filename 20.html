@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>AG Constructores</title>
+    <link rel="icon" type="image/png" href="img/logo-icon.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- AgConstructores' Style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <nav class="navbar navbar-default navbar-static-top ">
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-1 col-xs-6 hidden-xs hidden-sm">
+        <a href="index.html"><img src="img/logo-icon.png" class="img-responsive"></a>
+      </div>
+      <div class="col-md-6 col-xs-0 hidden-xs hidden-sm"></div>
+      <div class="col-md-1 col-xs-6">
+        <a href="index.html"><button class="btn btn-block linkButton">Inicio</button></a>
+      </div>
+       <!--<div class="col-md-1 col-xs-6">
+        <a href="experiencia.html"><button class="btn btn-block linkButton">Experiencia</button></a>
+      </div>-->
+      <div class="col-md-1 col-xs-6">
+        <a href="filosofia.html"><button class="btn btn-block linkButton">Filosofía</button></a>
+      </div>      <div class="col-md-1 col-xs-6">
+        <a href="why.html"><button class="btn btn-block linkButton" style="padding-left:2px">¿Por qué AG?</button></a>
+      </div>
+      <div class="col-md-1 col-xs-6">
+        <a href="proyectos.html"><button class="btn btn-block linkButton">Proyectos</button></a>
+      </div>
+
+      <div class="col-md-1 col-xs-6">
+        <a href="contacto.html"><button class="btn btn-block linkButton">Contacto</button></a>
+      </div>
+    </div>
+    </div>
+</nav>
+<div class="container">
+<a href="proyectos.html" class="btn btn-danger"><-- regresar a "Proyectos"</a>
+<h1 class="text-center" style="margin: 0.5em auto 1em auto"></h1>
+
+  <div class="row" id="projectUnfold">
+    
+    
+  </div>  
+  
+<h5 class="text-center">Todos los derechos reservados<br/>AG Constructores, ©2015</h5>
+<script type="text/javascript" id="scrptf"></script>
+  </body>
+  <script>
+    var prfolder = "20";
+  </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="proyectosjQuery.js"></script>
+    <script type="text/javascript">
+     var prnum = 0;
+
+    var prnumcalc = function(){
+      for(var j = 0; j < agc.length; j++){
+          if (agc[j].imagesFolder == prfolder){
+            prnum = j;
+        }
+      }
+  };
+
+  prnumcalc();
+   
+      $("h1").append("<b>"+pnamef(prnum)+"</b>")
+      $("#projectUnfold").append('<div class="row well"><div class="col-xs-12 col-md-6">'+pimagem(prnum)+'</div><div class="col-xs-12 col-md-6">'+pubicacion(prnum)+parea(prnum)+parquitectura(prnum)+pconstruccion(prnum)+pingenieria(prnum)+pjardinizacion(prnum)+pmontaje(prnum)+pfotografia(prnum)+pdescripcionf(prnum)+'</div></div>');
+      
+
+     $("#projectUnfold").append("<div class='row well'>"+pimagef(prnum)+"</div>");
+
+    </script>
+
+</html>
