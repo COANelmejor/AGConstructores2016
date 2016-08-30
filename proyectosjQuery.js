@@ -104,6 +104,29 @@ var agc = [
 		"descripcion": "La casa se encuentra rodeada de áreas verdes y su propio jardín en donde la piscina forma parte integral de su arquitectura por la forma en que se interrelaciona con las áreas de sala y los dormitorios de la planta baja. Su arquitectura es de líneas simples y rectas adornada con estructuras de madera en forma de pérgolas para enmarcar las paredes de mampostería y generar la sombra necesaria para el comfort térmico de las áreas interiores."
 	},
 	{
+		"name": "Residencial Las Olas",
+		"ubicacion": "Residencial Las Olas, Escuintla, Guatemala",
+		"area": "550 m²",
+		"arquitectura": "Arq. Arq. Alejandro González",
+		"construccion": "Grupo AG Constructores S.A.",
+		"fotografia": "Arq. Alejandro González",
+		"jardinizacion": "Residencial Las Olas",
+		"ingenieria": "",
+		"montaje": "",
+		"imagesFolder": "20",
+		"imagesFiles": [
+			"imgRe02.jpg",
+			"imgRe01.jpg",
+			"imgRe04.jpg",
+			"imgRe05.jpg",
+			"imgRe06.jpg",
+			"imgRe07.jpg",
+			"imgRe08.jpg",
+			"imgRe03.jpg",
+			],
+		"descripcion": "Este proyecto está concebido en dos módulos habitacionales da carácter recreativo-familiar, utilizando algunas técnicas y materiales para lograr un bienestar térmico adecuado para la zona costera del pacífico de Guatemala."
+	},
+	{
 		"name": "Rampa Fenix (Bodega en Puerto Quetzal)",
 		"ubicacion": "Empresa Portuaria Quetzal, Puerto San José, Escuintla, Guatemala",
 		"area": "800.00 m²",
@@ -339,7 +362,6 @@ var agc = [
 		"imagesFiles": ["IMG_8887.JPG","IMG_8888.JPG","IMG_8890.JPG","IMG_8891.JPG","IMG_8893.JPG","IMG_8897.JPG"],
 		"descripcion": ""
 	},
-
 	{
 		"name": "HERR SALCHICHA",
 		"ubicacion": "Centro Comercial El Campanario, zona 10, Guatemala",
@@ -351,21 +373,15 @@ var agc = [
 		"ingenieria": "",
 		"montaje": "",
 		"imagesFolder": "19",
-		"imagesFiles": ["IMG_7609.jpg","IMG_7607.jpg","IMG_7608.jpg","IMG_7612.jpg","IMG_7616.JPG","IMG_7617.JPG","IMG_7618.jpg"],
-		"descripcion": ""
-	},
-	{
-		"name": "Residencial Las Olas",
-		"ubicacion": "Residencial Las Olas, Escuintla, Guatemala",
-		"area": "310 m²",
-		"arquitectura": "Arq. Arq. Alejandro González",
-		"construccion": "Grupo AG Constructores S.A.",
-		"fotografia": "Arq. Alejandro González",
-		"jardinizacion": "Residencial Las Olas",
-		"ingenieria": "",
-		"montaje": "",
-		"imagesFolder": "20",
-		"imagesFiles": ["13413041_658389390983822_882429542360553946_n.jpg","13419265_658389317650496_8930559801089553946_n.jpg","13427907_658389270983834_4504796568957101286_n.jpg","13432318_658389097650518_1877722580206230555_n.jpg","13434878_658389370983824_5799783548344065628_n.jpg","13434921_658389500983811_445900477826786280_n.jpg","13442253_658389107650517_4325396247499328939_n.jpg","13498088_658389464317148_5639107514872754775_o.jpg"]
+		"imagesFiles": [
+			"IMG_7609.jpg",
+			"IMG_7607.jpg",
+			"IMG_7608.jpg",
+			"IMG_7612.jpg",
+			"IMG_7616.JPG",
+			"IMG_7617.JPG",
+			"IMG_7618.jpg"
+			],
 		"descripcion": ""
 	}
 	/*, // Estos Poryectos se eliminaron de la página por falta de información. 
